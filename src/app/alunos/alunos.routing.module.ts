@@ -1,15 +1,15 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { AlunoDetalheComponent } from "./aluno-detalhe/aluno-detalhe.component";
-import { AlunosFormComponent } from "./alunos-form/alunos-form.component";
+import { AlunoFormComponent } from "./aluno-form/aluno-form.component";
 import { AlunosComponent } from "./alunos.component";
 
 const alunosRoutes = [
   {path: 'alunos', component: AlunosComponent,
     children : [
-      {path: 'novo', component: AlunosFormComponent},
+      {path: 'novo', component: AlunoFormComponent},
       {path: ':id', component: AlunoDetalheComponent},
-      {path: ':id/edit', component: AlunosFormComponent},
+      {path: ':id/edit', component: AlunoFormComponent},
     ]}
 ];
 
